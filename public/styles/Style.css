@@ -1,3 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:ital,wght@0,300;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Kdam Thmor Pro";
+  font-size: 1rem;
+}
 
+header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  background-color: #ffa801;
+}
+.main-nav .logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.main-nav .logo img {
+  width: 60px;
+}
+.main-nav ul {
+  position: absolute;
+  background-color: #ffa801;
+  color: #1e272e;
+  height: 0px;
+  overflow: hidden;
+  transition: 0.5s;
+  width: 100%;
+  left: 0;
+  top: 69px;
+  padding: 0 10px;
+}
+.main-nav ul li {
+  width: 100%;
+  list-style-type: none;
+  line-height: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+.main-nav .actions i {
+  font-size: 30px;
+  cursor: pointer;
+  color: #ffffff;
+  transition: 0.5s cubic-bezier();
+}
+.main-nav .actions i.close {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .main-nav .logo {
+    width: 80px;
+    height: 80px;
+  }
+  .main-nav .logo img {
+    width: 80px;
+  }
+  .main-nav ul {
+    height: 24px;
+    top: 38px;
+    right: 0;
+    text-align: right;
+    background: none;
+  }
+  .main-nav li {
+    display: inline;
+    margin-left: 20px;
+  }
+  .main-nav .actions {
+    display: none;
+  }
+}
+
+.main-title {
+  background-color: #ffa801;
+  font-family: "Kdam Thmor Pro";
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: -1px;
+}
 
 /*# sourceMappingURL=Style.css.map */

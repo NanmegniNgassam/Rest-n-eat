@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:ital,wght@0,300;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&display=swap');
+
+//Colors
+$primary-color : #ffa801;
+$secondary-color : #808e9b;
+$text-color : #1e272e;
+$highlight-text-color : #ffffff;
+
+
+//Typography
+$title-font : 'Kdam Thmor Pro';
+$normal-font : 'Ubuntu';
+$highlight-font : 'Roboto';
+
+//font-size
+$title-size : 1.4rem;
+$normal-size : 1rem;
+
+@media screen and (min-width: 600px ) {
+    $title-size : 1.6rem;
+    $normal-size : 1.1rem;
+}
