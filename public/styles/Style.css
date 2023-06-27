@@ -41,13 +41,19 @@ header {
   left: 0;
   top: 69px;
   padding: 0 10px;
+  z-index: 1;
 }
 .main-nav ul li {
   width: 100%;
   list-style-type: none;
   line-height: 24px;
+  color: #ffffff;
   text-align: center;
   cursor: pointer;
+}
+.main-nav ul a {
+  text-decoration: none;
+  color: #ffffff;
 }
 .main-nav .actions i {
   font-size: 30px;
@@ -90,6 +96,69 @@ header {
   color: #ffffff;
   text-transform: uppercase;
   margin-top: -1px;
+}
+
+.lead-banner {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+  background-color: #ffa801;
+}
+.lead-banner img {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+.lead-banner .content {
+  color: #ffffff;
+  position: absolute;
+  top: 80px;
+  right: 10px;
+}
+.lead-banner .content span {
+  display: block;
+  font-family: "Kdam Thmor Pro";
+  text-align: right;
+  font-size: 1.4rem;
+}
+.lead-banner .call-to-action {
+  position: absolute;
+  top: 200px;
+  right: 10px;
+  display: flex;
+  gap: 50px;
+}
+.lead-banner .call-to-action a {
+  text-decoration: none;
+  color: #ffffff;
+  border: 2px solid #ffa801;
+  width: 120px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ffa801;
+  cursor: pointer;
+}
+@media screen and (min-width: 600px) {
+  .lead-banner {
+    height: 400px;
+  }
+  .lead-banner .content {
+    top: 150px;
+  }
+  .lead-banner .content span {
+    font-size: 2rem;
+  }
+  .lead-banner .call-to-action {
+    top: 300px;
+  }
+  .lead-banner .call-to-action a {
+    width: 250px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.2rem;
+  }
 }
 
 /*# sourceMappingURL=Style.css.map */
