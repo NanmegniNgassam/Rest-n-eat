@@ -2,6 +2,7 @@
 
 //Colors
 $primary-color : #ffa801;
+$primary-color-darken : darken($primary-color, 20);
 $secondary-color : #808e9b;
 $text-color : #1e272e;
 $highlight-text-color : #ffffff;
@@ -15,8 +16,5 @@ $highlight-font : 'Roboto';
 //font-size
 $title-size : 1.4rem;
 $normal-size : 1rem;
-
-@media screen and (min-width: 600px ) {
-    $title-size : 2rem;
-    $normal-size : 1.1rem;
-}
+$desktop-title-size : 2rem;
+$desktop-normal-size : 1.1rem;
