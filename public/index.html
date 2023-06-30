@@ -9,6 +9,7 @@
     with some relatives or yourself. Anyway, just take a seat order and enjoy the moment. It's really soft and easy !">
 
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="styles/Style.css">
     <link rel="shortcut icon" href="../assets/images/logo_sans_fond.png" type="image/x-icon">
     <title>Rest-n-eat | Flavors temple</title>
@@ -40,22 +41,22 @@
             </div>
             <div class="call-to-action">
                 <a href="#">Book a table</a>
-                <a href="#">Get the cart</a>
+                <a href="#">Get the menu</a>
             </div>
         </div>
     </header>
 
 
     <main>
+        <span class="partTitle">Our Services</span>
         <section class="services">
-            <span class="partTitle">Our Services</span>
             <div class="wrapper">
                 <div class="service">
                     <div class="img-container">
                         <i class='bx bx-restaurant' style='color:#9a6500' ></i>
                     </div>
                     <div class="content">
-                        <span class="title">Excellent quality</span>
+                        <span class="title">Food and Drinks</span>
                         <span class="text">
                             <i class='bx bxs-star' style='color:#9a6500'></i>
                             <i class='bx bxs-star' style='color:#9a6500'></i>
@@ -90,16 +91,34 @@
             </div>
         </section>
 
+        <span class="partTitle">Our Menus</span>
+        <section class="menu">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="../assets/images/menu_1.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_2.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_3.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_4.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_5.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_6.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_7.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_8.jpg" alt="Our speciality"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        
+        <span class="partTitle">Book a table for tonight or later</span>
         <section>
-            <span class="partTitle">Our Menus</span>
+            
         </section>
 
+        <span class="partTitle">What customers think about us</span>
         <section>
-            <span class="partTitle">Book a table for tonight or later</span>
-        </section>
-
-        <section>
-            <span class="partTitle">What customers think about us</span>
+            
         </section>
     </main>
 
@@ -108,5 +127,41 @@
 
     </footer>
     <script src="scripts/Main.js"></script>
+
+    <!-- Creating an UI sliding Menu -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.esm.browser.min.js'
+      
+        const swiper = new Swiper( '.swiper', {
+            // Optional parameters
+            speed: 400,
+            direction: 'horizontal',
+            loop: false,
+            effect: 'flip',
+            flipEffect: {
+                slideShadows: true,
+            },
+            autoplay: {
+                delay: 2000,
+            },
+
+            // If we need pagination
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return '<span class="' + className + '">' + (index + 1) + '</span>';
+                }
+            },
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+    </script>
 </body>
 </html>

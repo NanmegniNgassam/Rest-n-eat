@@ -130,7 +130,7 @@ header {
         top: 200px;
         right: 10px;
         display: flex;
-        gap: 50px;
+        gap: 30px;
         a {
             text-decoration: none;
             color: $highlight-text-color;
@@ -164,13 +164,14 @@ header {
     }
 } // End of lead-banner
 
+.partTitle {
+    font-size: $title-size;
+    display: block;
+    margin: 20px 0; 
+}
+
 main section {
     margin-bottom: 40px;
-    .partTitle {
-        font-size: $title-size;
-        display: block;
-        margin: 20px 0; 
-    }
     span {
         font-size: $normal-size;
     }
@@ -217,6 +218,41 @@ main section {
         span.text {
             color: $primary-color-darken;
             font-family: $normal-font;
+        }
+    }
+    @include desktopDesignQuery(600px) {
+        .img-container {
+            width: 150px;
+            height: 150px;
+            i {
+                font-size: 120px;
+            }
+        }
+    }
+} // End of service section
+
+.menu {
+    width: 90%;
+    margin: 0 auto;
+    .swiper {
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 0 auto;
+        }
+        
+        .swiper-pagination .swiper-pagination-bullet {
+            color: $highlight-text-color;
+            background-color: $primary-color;
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .swiper-button-prev, .swiper-button-next{
+            color: $primary-color;
+            font-weight: 700;
         }
     }
 }

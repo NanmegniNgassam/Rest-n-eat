@@ -142,7 +142,7 @@ header {
   top: 200px;
   right: 10px;
   display: flex;
-  gap: 50px;
+  gap: 30px;
 }
 .lead-banner .call-to-action a {
   text-decoration: none;
@@ -176,13 +176,14 @@ header {
   }
 }
 
-main section {
-  margin-bottom: 40px;
-}
-main section .partTitle {
+.partTitle {
   font-size: 1.4rem;
   display: block;
   margin: 20px 0;
+}
+
+main section {
+  margin-bottom: 40px;
 }
 main section span {
   font-size: 1rem;
@@ -226,6 +227,38 @@ main section span {
 .service .content span.text {
   color: #9a6500;
   font-family: "Ubuntu";
+}
+@media screen and (min-width: 600px) {
+  .service .img-container {
+    width: 150px;
+    height: 150px;
+  }
+  .service .img-container i {
+    font-size: 120px;
+  }
+}
+
+.menu {
+  width: 90%;
+  margin: 0 auto;
+}
+.menu .swiper img {
+  width: 100%;
+  max-width: 400px;
+  display: block;
+  margin: 0 auto;
+}
+.menu .swiper .swiper-pagination .swiper-pagination-bullet {
+  color: #ffffff;
+  background-color: #ffa801;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+}
+.menu .swiper .swiper-button-prev, .menu .swiper .swiper-button-next {
+  color: #ffa801;
+  font-weight: 700;
 }
 
 /*# sourceMappingURL=Style.css.map */

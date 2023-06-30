@@ -3,6 +3,7 @@ let openMenuButton = document.getElementById('openMenu') as HTMLElement;
 let closeMenuButton = document.getElementById('closeMenu') as HTMLElement;
 let menu = document.getElementById('menu') as HTMLUListElement;
 
+
 let menuInteractions = () => {
     openMenuButton.classList.toggle('close');
     closeMenuButton.classList.toggle('close');
