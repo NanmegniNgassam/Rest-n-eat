@@ -167,11 +167,11 @@ header {
 .partTitle {
     font-size: $title-size;
     display: block;
-    margin: 20px 0; 
+    margin-top: 20px; 
 }
 
 main section {
-    margin-bottom: 40px;
+    margin: 40px 0 ;
     span {
         font-size: $normal-size;
     }
@@ -196,7 +196,6 @@ main section {
 }
 
 .service {
-    margin: 20px 0;
     padding: 10px;
     .img-container {
         width: 120px;
@@ -233,7 +232,7 @@ main section {
 
 .menu {
     width: 90%;
-    margin: 0 auto;
+    margin: 40px auto;
     .swiper {
         img {
             width: 100%;
@@ -241,7 +240,6 @@ main section {
             display: block;
             margin: 0 auto;
         }
-        
         .swiper-pagination .swiper-pagination-bullet {
             color: $highlight-text-color;
             background-color: $primary-color;
@@ -255,4 +253,75 @@ main section {
             font-weight: 700;
         }
     }
-}
+} // End of menu section
+
+.booking {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 30px;
+    margin: 40px 0;
+    .img-container {
+        img {
+            width: 100%;
+        }
+    }
+    
+    .form form {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        * {
+            font-family: $highlight-font;
+            font-size: $normal-size;
+        }
+        .input-group label, .input-group input {
+            display: block;
+            width: 80%;
+            min-width: 250px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .input-group input {
+            padding: 5px 10px;
+            outline: none;
+            &:focus {
+                border: 2px solid $primary-color;
+                border-radius: 5px 5px;
+            }
+        }
+        span.booking-results {
+            width: 100%;
+            text-align: center;
+        }
+
+        .booking-button {
+            display: block;
+            width: 250px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px 10px;
+            background-color: $primary-color;
+            font-family: $title-font;
+            color: $highlight-text-color;
+            outline: none;
+            border: none;
+            cursor: pointer;
+        }
+        
+    }
+    @include desktopDesignQuery(750px) {
+        flex-direction: row;
+        align-items: center;
+        .img-container {
+            flex-grow: 1;
+        }
+        .form {
+            flex-grow: 1;
+            width: 60%;
+            form {
+                gap: none;
+            }
+        }
+    }
+} // End of booking section

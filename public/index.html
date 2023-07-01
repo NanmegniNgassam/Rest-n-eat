@@ -23,7 +23,7 @@
             <ul id="menu">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Services</a></li>
-                <li><a href="#">Menus</a></li>
+                <li><a href="#menu">Menus</a></li>
                 <li><a href="#">Booking</a></li>
                 <li><a href="#">Testimonials</a></li>
             </ul>
@@ -103,6 +103,8 @@
                     <div class="swiper-slide"><img src="../assets/images/menu_6.jpg" alt="Our speciality"></div>
                     <div class="swiper-slide"><img src="../assets/images/menu_7.jpg" alt="Our speciality"></div>
                     <div class="swiper-slide"><img src="../assets/images/menu_8.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_9.jpg" alt="Our speciality"></div>
+                    <div class="swiper-slide"><img src="../assets/images/menu_10.jpg" alt="Our speciality"></div>
                 </div>
                 <div class="swiper-pagination"></div>
             
@@ -112,12 +114,33 @@
         </section>
         
         <span class="partTitle">Book a table for tonight or later</span>
-        <section>
-            
+        <section class="booking">
+            <div class="img-container">
+                <img src="../assets/images/2.jpg" alt="Prenez une table à dinner pour vous avec vos collègues ou votre famille">
+            </div>
+            <div class="form">
+                <form action="" method="post">
+                    <div class="input-group">
+                        <label for="customer-email">Enter your Email</label>
+                        <input type="email" name="customer-email" id="customer-email">
+                    </div>
+                    <div class="input-group">
+                        <label for="booking-date">When will you come ?</label>
+                        <input type="datetime-local" name="booking-date" id="booking-date">
+                    </div>
+                    <div class="input-group">
+                        <label for="booking-details">How many seats do you want ?</label>
+                        <input type="number" name="booking-details" id="booking-details" min="1">
+                    </div>
+
+                    <span class="booking-results">You'll pay {amount}€ for your booking.</span>
+                    <input class="booking-button" type="submit" value="Pay for the reservation">
+                </form>
+            </div>
         </section>
 
         <span class="partTitle">What customers think about us</span>
-        <section>
+        <section class="testimonials">
             
         </section>
     </main>
