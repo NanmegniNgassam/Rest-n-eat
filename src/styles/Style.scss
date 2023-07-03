@@ -325,3 +325,53 @@ main section {
         }
     }
 } // End of booking section
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    @include desktopDesignQuery(600px, 1000px) {
+        .testimonial {
+            width: 80%;
+        }
+    }
+    @include desktopDesignQuery(1000px) {
+        flex-direction: row;
+    }
+}
+
+.testimonial {
+    width: 30%;
+    min-width: 300px;
+    box-shadow: 3px 3px 10px;
+    padding: 10px;
+    .img-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        img {
+            width: 100%;
+        }
+    }
+    .content {
+        .rating {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        i.bxs-quote-alt-left {
+            display: block;
+            text-align: center;
+        }
+        span {
+            font-family: $normal-font;
+            display: block;
+            text-align: justify;
+            text-indent: 40px;
+            line-height: 1.3rem;
+        }
+    }
+}

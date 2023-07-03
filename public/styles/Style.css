@@ -327,4 +327,54 @@ main section span {
   }
 }
 
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .testimonials .testimonial {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .testimonials {
+    flex-direction: row;
+  }
+}
+
+.testimonial {
+  width: 30%;
+  min-width: 300px;
+  box-shadow: 3px 3px 10px;
+  padding: 10px;
+}
+.testimonial .img-container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+.testimonial .img-container img {
+  width: 100%;
+}
+.testimonial .content .rating {
+  text-align: center;
+  margin-bottom: 10px;
+}
+.testimonial .content i.bxs-quote-alt-left {
+  display: block;
+  text-align: center;
+}
+.testimonial .content span {
+  font-family: "Ubuntu";
+  display: block;
+  text-align: justify;
+  text-indent: 40px;
+  line-height: 1.3rem;
+}
+
 /*# sourceMappingURL=Style.css.map */
