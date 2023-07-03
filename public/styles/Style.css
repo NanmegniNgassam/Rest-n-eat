@@ -370,11 +370,63 @@ main section span {
   text-align: center;
 }
 .testimonial .content span {
-  font-family: "Ubuntu";
+  font-family: "Roboto";
   display: block;
   text-align: justify;
   text-indent: 40px;
   line-height: 1.3rem;
+}
+
+footer {
+  background-color: #ffa801;
+  color: #ffffff;
+  padding: 20px;
+}
+footer .intro {
+  color: black;
+  text-align: center;
+}
+footer hr {
+  border: 1px solid #ffffff;
+  width: 50%;
+  margin: 10px auto;
+}
+footer .advert {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+}
+footer .advert .network {
+  padding: 0 10px;
+  display: flex;
+  max-width: 350px;
+  gap: 20px;
+  align-items: center;
+}
+footer .advert .network i {
+  font-size: 30px;
+}
+footer .advert .network span {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+@media screen and (min-width: 800px) {
+  footer .advert {
+    flex-direction: row;
+    justify-content: center;
+  }
+  footer .advert .network i {
+    font-size: 40px;
+  }
+}
+footer .copyright {
+  text-align: center;
+}
+footer .copyright a {
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 /*# sourceMappingURL=Style.css.map */
